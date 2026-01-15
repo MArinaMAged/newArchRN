@@ -39,7 +39,12 @@
     "name": "VFGNetwork",
     "type": "modules",
     "jsSrcsDir": "src",
-    "specs": ["NativeVFGNetwork.ts"]
+    "specs": ["NativeVFGNetwork.ts"],
+    "ios": {
+      "modulesProvider": {
+        "NativeVFGNetwork": "VFGNetwork"
+      }
+    }
   },
   "engines": {
     "node": ">=20"
