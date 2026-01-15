@@ -9,7 +9,7 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTTurboModule.h>
 
-@interface RCT_EXTERN_MODULE(VFGNetwork, NSObject <RCTBridgeModule, RCTTurboModule>)
+@interface RCT_EXTERN_MODULE(VFGNetwork, NSObject)
 RCT_EXTERN_METHOD(hello:(NSString *)method
 				  resolve:(RCTPromiseResolveBlock)resolve
 				  reject:(RCTPromiseRejectBlock)reject)
