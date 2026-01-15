@@ -9,8 +9,10 @@
 
 // Import generated codegen header if available
 #if defined(__has_include)
-#if __has_include("VFGNetworkSpec.h")
-#import "VFGNetworkSpec.h"
+#if __has_include("VFGNetwork/VFGNetwork.h")
+#import "VFGNetwork/VFGNetwork.h"
+#elif __has_include("VFGNetwork.h")
+#import "VFGNetwork.h"
 #endif
 #endif
 

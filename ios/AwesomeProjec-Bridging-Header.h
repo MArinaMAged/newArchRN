@@ -8,6 +8,15 @@
 #import <React/RCTTurboModule.h>
 #import <React/RCTTurboModuleManager.h>
 
+// Import generated codegen header for VFGNetwork if available
+#if defined(__has_include)
+#if __has_include("VFGNetwork/VFGNetwork.h")
+#import "VFGNetwork/VFGNetwork.h"
+#elif __has_include("VFGNetwork.h")
+#import "VFGNetwork.h"
+#endif
+#endif
+
 #ifndef AwesomeProjec_Bridging_Header_h
 #define AwesomeProjec_Bridging_Header_h
 
