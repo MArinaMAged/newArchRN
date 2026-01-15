@@ -8,7 +8,6 @@
 import Foundation
 import React
 
-
 @objc(VFGNetwork)
 class VFGNetwork: NSObject, RCTTurboModule {
   static func moduleName() -> String! {
@@ -19,7 +18,13 @@ class VFGNetwork: NSObject, RCTTurboModule {
     return true
   }
 
-  @objc public func hello(_ method: String) {
-    print("Hello from native: \(method)")
+  @objc public func hello(_ method: String, resolve: @escaping RCTPromiseResolveBlock, reject: @escaping RCTPromiseRejectBlock) {
+    let message = "Hello from native: \(method)"
+    print(message)
+    resolve(message)
   }
+  
+    @objc public func getTurboModule(jsInvoker: RCTTurboModuleJSInvoker) -> RCTTurboModule {
+      return self
+    }
 }

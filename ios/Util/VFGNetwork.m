@@ -6,7 +6,12 @@
 //
 
 #import "VFGNetwork.h"
+#import <React/RCTBridgeModule.h>
+#import <React/RCTTurboModule.h>
 
-@implementation VFGNetwork
-
+@interface RCT_EXTERN_MODULE(VFGNetwork, NSObject <RCTBridgeModule, RCTTurboModule>)
+RCT_EXTERN_METHOD(hello:(NSString *)method
+				  resolve:(RCTPromiseResolveBlock)resolve
+				  reject:(RCTPromiseRejectBlock)reject)
 @end
+
