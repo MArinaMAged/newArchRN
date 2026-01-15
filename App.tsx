@@ -11,7 +11,7 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
-import VFGNetwork from './src/VFGNetworkSpec';
+import VFGNetwork from './src/NativeVFGNetwork';
 import Spec from './src/OpenDisplayOverClass';
 import { useEffect } from 'react';
 // import MyUtil from './src/NativeMyUtil';
